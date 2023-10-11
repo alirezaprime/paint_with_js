@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lalezar&family=Orbitron&family=PT+Serif:wght@700&family=Poppins:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #4a98f7;
+}
+.container {
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2);
+}
+.tools-area {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0 15px;
+}
+.tools {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+.tools .color {
+  display: flex;
+  align-items: center;
+}
+input[type="color"] {
+  border: none;
+  width: 20px;
+  height: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+label,
+i {
+  margin: 0 3px;
+  cursor: pointer;
+}
+.buttons button {
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.buttons .save {
+  background: #4a98f7;
+  color: #fff;
+}
+.buttons .clear:hover {
+  background-color: lightgrey;
+}
+.draw-area canvas {
+  width: 100%;
+  height: 450px;
+  border-radius: 0 0 10px 10px;
+}
+.active {
+  color: #4a98f7;
+}
